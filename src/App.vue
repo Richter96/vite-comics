@@ -72,7 +72,7 @@ export default {
     </section>
 
     <section class="main_footer">
-      <div class="row row-cols-6">
+      <div class="row row-cols-6 container-md m-auto">
         <div class="col d-flex flex-column">
           <h5>DC COMICS</h5>
           <ul>
@@ -86,8 +86,8 @@ export default {
           </ul>
           <h5>SHOP</h5>
           <ul>
-            <li>Shop Dc</li>
-            <li>Shop Dc Collectibles</li>
+            <li><a href="">Shop Dc</a> </li>
+            <li><a href="">Shop Dc Collectibles</a> </li>
           </ul>
         </div>
         <div class="col d-flex flex-column">
@@ -118,7 +118,16 @@ export default {
         </div>
       </div>
     </section>
-    <section class="bottom_footer"></section>
+    <section class="bottom_footer">
+      <div class="row container-md m-auto">
+        <div class="col">
+          <button>SING-UP NOW</button>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </section>
 
 
   </footer>
@@ -171,23 +180,48 @@ export default {
 
 #app_footer {
 
-  .col {
-    margin: 2rem 0;
-    font-size: 0.7rem;
-    display: flex;
-    align-items: center;
-
-    a {
-      display: flex;
-      align-items: center;
-      width: 100%;
-
-    }
-  }
 
   .top_footer {
     img {
       max-width: 50px;
+    }
+
+    .col {
+      margin: 2rem 0;
+      font-size: 0.7rem;
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+      }
+    }
+  }
+
+  .main_footer {
+    background-image: url(./assets/img/footer-bg.jpg);
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    h5 {
+      margin: 1rem 0;
+      color: #ffffff;
+    }
+
+    li {
+      line-height: 1rem;
+    }
+
+    a {
+      font-size: 0.7rem;
+      text-decoration: none;
+      color: gray;
     }
   }
 }

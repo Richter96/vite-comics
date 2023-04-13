@@ -25,8 +25,8 @@ export default {
       </nav>
     </div>
   </header>
-  <main>
-    <div class="container_main">
+  <main id="app_main">
+    <div class="container-md align-items-center">
       <p>CONTENT GOES HERE</p>
     </div>
   </main>
@@ -63,12 +63,13 @@ header {
 }
 
 
-.container_main {
+#app_main {
   background-color: #1c1c1c;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  .container-md {
+    height: 150px;
+    display: flex;
+  }
 
 
   p {

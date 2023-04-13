@@ -48,11 +48,12 @@ header {
   }
 
   a {
+    color: black;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-bottom: 2px solid blue;
 
-    a:not(.active) {
+    &:not(.active) {
       border-bottom: none;
     }
   }

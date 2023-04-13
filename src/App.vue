@@ -72,15 +72,50 @@ export default {
     </section>
 
     <section class="main_footer">
-      <div class="row">
-        <div class="col">
-          <h2>DC </h2>
+      <div class="row row-cols-6">
+        <div class="col d-flex flex-column">
+          <h5>DC COMICS</h5>
           <ul>
-            li
+            <li><a href="">Characters</a> </li>
+            <li><a href="">Comics</a> </li>
+            <li><a href="">Movie</a> </li>
+            <li><a href="">Tv</a> </li>
+            <li><a href="">Games</a> </li>
+            <li><a href="">Videos</a> </li>
+            <li><a href="">News</a> </li>
+          </ul>
+          <h5>SHOP</h5>
+          <ul>
+            <li>Shop Dc</li>
+            <li>Shop Dc Collectibles</li>
           </ul>
         </div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <div class="col d-flex flex-column">
+          <h5>DC</h5>
+          <ul>
+            <li><a href=""> Terms Of Use</a> </li>
+            <li><a href=""> Privacy policy (New)</a> </li>
+            <li><a href=""> Ad Choices</a> </li>
+            <li><a href=""> Advertising</a> </li>
+            <li><a href=""> Jobs</a> </li>
+            <li><a href=""> Subscriptions</a> </li>
+            <li><a href=""> Talent Workshops</a></li>
+            <li><a href=""> CPSC Certificates</a></li>
+            <li><a href=""> Ratings</a></li>
+            <li><a href=""> Shop Help</a></li>
+            <li><a href=""> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col d-flex flex-column">
+          <h5>SITES</h5>
+          <ul>
+            <li><a href="">Dc</a></li>
+            <li><a href="">MAD Magazine</a></li>
+            <li><a href="">Dc Kids</a></li>
+            <li><a href="">DC Universe</a></li>
+            <li><a href="">DC Power Visa</a></li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="bottom_footer"></section>
@@ -145,6 +180,8 @@ export default {
     a {
       display: flex;
       align-items: center;
+      width: 100%;
+
     }
   }
 

@@ -120,11 +120,16 @@ export default {
     </section>
     <section class="bottom_footer">
       <div class="row container-md m-auto">
-        <div class="col">
-          <button>SING-UP NOW</button>
+        <div class="col d-flex align-items-center">
+          <button class="btn_singup bg-transparent">SING-UP NOW!</button>
         </div>
-        <div class="col">
-
+        <div class="col d-flex align-items-center justify-content-end">
+          <span class="fw-bold">FOLLOW AS</span>
+          <img class="ps-3" src="./assets/img/footer-facebook.png" alt="">
+          <img class="ps-3" src="./assets/img/footer-twitter.png" alt="">
+          <img class="ps-3" src="./assets/img/footer-youtube.png" alt="">
+          <img class="ps-3" src="./assets/img/footer-pinterest.png" alt="">
+          <img class="ps-3" src="./assets/img/footer-periscope.png" alt="">
         </div>
       </div>
     </section>
@@ -138,6 +143,7 @@ export default {
 
 <style lang="scss" scoped>
 // @use './node_modules/bootstrap/scss/bootstrap.scss';
+@use './assets/scss/partials/variables' as *;
 
 #app_header {
   text-align: center;
@@ -148,13 +154,15 @@ export default {
   }
 
   a {
-    color: black;
+    color: #0c7cec;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-bottom: 2px solid blue;
+    border-bottom: 3px solid #0c7cec;
 
     &:not(.active) {
       border-bottom: none;
+      color: black;
+
     }
   }
 
@@ -222,6 +230,28 @@ export default {
       font-size: 0.7rem;
       text-decoration: none;
       color: gray;
+    }
+  }
+
+  .bottom_footer {
+    padding: 1rem 0;
+    background-color: $footerBottom;
+
+    .btn_singup {
+      border: 1px solid $primary;
+      color: white;
+      padding: 0.5rem 1rem;
+    }
+
+    .circle {
+      width: 2.5rem;
+      aspect-ratio: 1/1;
+      margin-left: 0.5rem;
+      color: $primary;
+    }
+
+    span {
+      color: $primary;
     }
   }
 }

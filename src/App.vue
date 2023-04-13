@@ -30,7 +30,25 @@ export default {
       <p>CONTENT GOES HERE</p>
     </div>
   </main>
-  <footer id="app_footer"></footer>
+
+
+
+  <footer id="app_footer">
+    <section class="top_footer">
+      <div class=" container-md m-auto row">
+        <div class="col">
+          <img class=" d-inline-block" src="./assets/img/buy-comics-digital-comics.png" alt="">
+          <span>DIGITAL COMICS</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class=" main_footer"></section>
+    <section class="bottom_footer"></section>
+
+
+  </footer>
 </template>
 
 
@@ -77,4 +95,6 @@ header {
   }
 
 }
+
+#app_footer {}
 </style>

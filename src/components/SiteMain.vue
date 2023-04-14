@@ -28,9 +28,9 @@ export default {
         <div class="jambotron">
             <img src="../assets/img/jumbotron.jpg" alt="">
         </div>
-        <div class="container-md ">
-            <span class="badgeSeries text-uppercase p-2 ">Current Series</span>
-            <div class="row row-cols-6">
+        <div class="container-md position-relative">
+            <span class="badgeSeries text-uppercase">Current Series</span>
+            <div class="row row-cols-6 mt-5">
                 <ProductItems v-for="card in cards" :image="card.thumb" :title="card.series" />
 
             </div>
@@ -58,19 +58,31 @@ export default {
     }
 
     .badgeSeries {
-        background-color: $primary;
+        background-color: #0c7cec;
+        position: absolute;
+        padding: 0.5rem 2rem;
+        top: -62px;
+        left: 0;
+        color: white;
+        font-weight: bold;
+    }
+
+    .col {
+        margin: 1rem 0;
     }
 
     .card {
         width: 100%;
+        height: 100%;
         background-color: transparent;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 25px;
 
         .square {
             width: 100%;
             aspect-ratio: 1;
             overflow: hidden;
+            box-shadow: 0 4px 8px 0 rgba(199, 199, 199, 0.463), 0 6px 20px 0 rgba(207, 207, 207, 0.19);
+
         }
 
         img {
@@ -78,10 +90,5 @@ export default {
 
         }
     }
-
-    p {
-        color: #ffffff;
-    }
-
 }
 </style>

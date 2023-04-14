@@ -14,8 +14,7 @@ export default {
                 <img :src="image" class="card_img" alt="...">
             </div>
             <div class="card-body">
-                <h5 class="card-title text-white">{{ title }}</h5>
-                <p class="card-text"></p>
+                <span class="card-title text-white">{{ title }}</span>
             </div>
         </div>
     </div>

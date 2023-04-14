@@ -30,7 +30,7 @@ export default [
     "type": "comic book"
   },
   {
-    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg/revision/latest?cb=20080809201655",
+    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg/revision/latest?cb=20080809201655.jpg",
     "price": "$2.99",
     "series": "Batman Beyond",
     "type": "comic book"

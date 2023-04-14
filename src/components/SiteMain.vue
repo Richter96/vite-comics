@@ -25,7 +25,11 @@ export default {
 
 <template>
     <main id="app_main">
+        <div class="jambotron">
+            <img src="../assets/img/jumbotron.jpg" alt="">
+        </div>
         <div class="container-md ">
+            <span class="badgeSeries text-uppercase p-2 ">Current Series</span>
             <div class="row row-cols-6">
                 <ProductItems v-for="card in cards" :image="card.thumb" :title="card.series" />
 
@@ -37,8 +41,25 @@ export default {
 
 
 <style lang="scss">
+@use '../assets/scss/partials/variables' as *;
+
 #app_main {
     background-color: #1c1c1c;
+
+    .jambotron {
+        width: 100%;
+        max-height: 300px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            max-width: 100%;
+        }
+    }
+
+    .badgeSeries {
+        background-color: $primary;
+    }
 
     .card {
         width: 100%;

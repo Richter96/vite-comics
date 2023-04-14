@@ -2,9 +2,15 @@
 
 <script>
 export default {
+    name: 'SiteHeader',
     data() {
         return {
-
+            menu: [
+                {
+                    text: 'Characters',
+                    heref: '#'
+                }
+            ]
         }
     },
 }
@@ -31,3 +37,5 @@ export default {
         </div>
     </header>
 </template>
+
+<style lang="scss"></style>

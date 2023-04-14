@@ -66,7 +66,7 @@ export default {
                 <div class="col d-flex align-items-center">
                     <button class="btn_singup bg-transparent">SING-UP NOW!</button>
                 </div>
-                <div class="col d-flex align-items-center justify-content-end">
+                <div class="social col d-flex align-items-center justify-content-end">
                     <span class="fw-bold">FOLLOW AS</span>
                     <img class="ps-3" src="../assets/img/footer-facebook.png" alt="">
                     <img class="ps-3" src="../assets/img/footer-twitter.png" alt="">

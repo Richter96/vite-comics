@@ -25,17 +25,8 @@ export default {
     <main id="app_main">
         <div class="container-md ">
             <div class="row row-cols-6">
-                <div class="col" v-for="card in cards">
-                    <div class="card">
-                        <div class="square">
-                            <img :src="card.thumb" class="card_img" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-white">{{ card.series }}</h5>
-                            <p class="card-text"></p>
-                        </div>
-                    </div>
-                </div>
+                <productItems v-for="card in cards" :image="card.thumb" :title="card.series" />
+
             </div>
         </div>
         <BannerVue></BannerVue>
@@ -64,7 +55,6 @@ export default {
 
         }
     }
-
 
     p {
         color: #ffffff;

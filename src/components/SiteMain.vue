@@ -1,6 +1,7 @@
 
 <script>
 import BannerVue from './BannerVue.vue';
+import ProductItems from './productItems.vue'
 import Cards from '../assets/data/dc-comics'
 
 
@@ -8,6 +9,7 @@ export default {
     name: 'SiteMain',
     components: {
         BannerVue,
+        ProductItems,
     },
     data() {
         return {
@@ -25,7 +27,7 @@ export default {
     <main id="app_main">
         <div class="container-md ">
             <div class="row row-cols-6">
-                <productItems v-for="card in cards" :image="card.thumb" :title="card.series" />
+                <ProductItems v-for="card in cards" :image="card.thumb" :title="card.series" />
 
             </div>
         </div>
@@ -34,7 +36,7 @@ export default {
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 #app_main {
     background-color: #1c1c1c;
 

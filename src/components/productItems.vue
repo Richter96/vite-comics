@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: productItems,
+    name: 'ProductItems',
     props: {
         image: String,
         title: String

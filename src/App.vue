@@ -57,20 +57,7 @@ export default {
 }
 
 
-#app_main {
-  background-color: #1c1c1c;
 
-  .container-md {
-    height: 150px;
-    display: flex;
-  }
-
-
-  p {
-    color: #ffffff;
-  }
-
-}
 
 .banner {
   img {

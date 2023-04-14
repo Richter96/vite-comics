@@ -9,11 +9,11 @@ export default {
 </script>
 <template>
     <div class="col">
-        <div class="card">
+        <div class="card border-0">
             <div class="square">
                 <img :src="image" class="card_img" alt="...">
             </div>
-            <div class="card-body">
+            <div class="card_body pt-3">
                 <span class="card-title text-white">{{ title }}</span>
             </div>
         </div>

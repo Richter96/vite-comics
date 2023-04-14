@@ -26,10 +26,12 @@ export default {
         <div class="container-md ">
             <div class="row row-cols-6">
                 <div class="col" v-for="card in cards">
-                    <div class="card" style="width:10rem;">
-                        <img :src="card.thumb" class="card-img-top" alt="...">
+                    <div class="card">
+                        <div class="square">
+                            <img :src="card.thumb" class="card_img" alt="...">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title text-white">{{ card.series }}</h5>
                             <p class="card-text"></p>
                         </div>
                     </div>
@@ -44,6 +46,25 @@ export default {
 <style lang="scss" scoped>
 #app_main {
     background-color: #1c1c1c;
+
+    .card {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+
+        .square {
+            width: 100%;
+            aspect-ratio: 1;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+
+        }
+    }
+
 
     p {
         color: #ffffff;

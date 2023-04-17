@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'ProductItems',
+    name: 'ComicsItems',
     props: {
         image: String,
         title: String
@@ -14,7 +14,7 @@ export default {
                 <img :src="image" class="card_img img-fluid" alt="...">
             </div>
             <div class="card_body pt-3">
-                <span class="card-title text-white">{{ title }}</span>
+                <span class="card-title text-white text-uppercase">{{ title }}</span>
             </div>
         </div>
     </div>

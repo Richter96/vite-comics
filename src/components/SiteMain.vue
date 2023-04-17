@@ -1,7 +1,7 @@
 
 <script>
 import BannerVue from './BannerVue.vue';
-import ProductItems from './productItems.vue'
+import ComicsItems from './ComicsItems.vue'
 import Cards from '../assets/data/dc-comics'
 
 
@@ -9,7 +9,7 @@ export default {
     name: 'SiteMain',
     components: {
         BannerVue,
-        ProductItems,
+        ComicsItems,
     },
     data() {
         return {
@@ -34,7 +34,7 @@ export default {
             <div class="container-md position-relative">
                 <span class="badgeSeries text-uppercase">Current Series</span>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-xxl-6 mt-5">
-                    <ProductItems v-for="card in cards" :image="card.thumb" :title="card.series" />
+                    <ComicsItems v-for="card in cards" :image="card.thumb" :title="card.series" />
                 </div>
                 <div class="d-flex justify-content-center">
                     <button class="btn_load_more text-uppercase border-0 text-white fw-bold py-1 px-4 mb-3"> Load

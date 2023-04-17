@@ -25,18 +25,24 @@ export default {
 
 <template>
     <main id="app_main">
+        <!-- jambotron section -->
         <div class="jambotron">
             <img src="../assets/img/jumbotron.jpg" alt="">
         </div>
-        <div class="container-md position-relative">
-            <span class="badgeSeries text-uppercase">Current Series</span>
-            <div class="row row-cols-6 mt-5">
-                <ProductItems v-for="card in cards" :image="card.thumb" :title="card.series" />
+        <!-- comics section -->
+        <section class="comics">
+            <div class="container-md position-relative">
+                <span class="badgeSeries text-uppercase">Current Series</span>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-xxl-6 mt-5">
+                    <ProductItems v-for="card in cards" :image="card.thumb" :title="card.series" />
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn_load_more text-uppercase border-0 text-white fw-bold py-1 px-4 mb-3"> Load
+                        more</button>
+                </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <button class="btn_load_more text-uppercase border-0 text-white fw-bold py-1 px-4 mb-3"> Load more</button>
-            </div>
-        </div>
+        </section>
+        <!-- banner icon -->
         <BannerVue></BannerVue>
     </main>
 </template>
